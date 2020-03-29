@@ -46,6 +46,19 @@ export const CharacterImage = styled.img`
   display: block;
 `
 
+export const CharacterButton = styled.button`
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 5;
+  font-size: 0;
+`
+
 export const CharacterName = styled(Subtitle)`
   color: ${COLORS.white};
   padding: 5px;

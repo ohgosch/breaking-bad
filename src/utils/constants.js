@@ -18,6 +18,7 @@ export const COLORS = {
   white: "#F0F0F0",
   whiteGrey: "#E8E8E8",
   black: "#262626",
+  blackTransparent: "rgba(38, 38, 38, 0.6)",
   blackLight: "#404040",
   blackLightGrey: "#707070",
 }
