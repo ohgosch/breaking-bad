@@ -1,11 +1,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import { Container, Content, Close } from "./style"
+import { Container, Content, Close, CloseOverlay } from "./style"
 import { modal } from "../../utils/texts"
 
 export const Modal = ({ children, close, opened }) => (
   <Container opened={opened}>
+    <CloseOverlay onClick={close}>{modal.close}</CloseOverlay>
     <Content>
       <Close title={modal.close} onClick={close} />
       {children}

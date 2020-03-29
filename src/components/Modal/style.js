@@ -36,6 +36,18 @@ export const Container = styled.div`
       pointer-events: auto;
     `}
 `
+
+export const CloseOverlay = styled.button`
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+`
+
 export const Content = styled.section`
   background-color: ${COLORS.white};
   position: relative;
