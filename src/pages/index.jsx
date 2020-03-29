@@ -1,7 +1,6 @@
 import React from "react"
 
 import { SEO } from "../components/SEO"
-import { Title } from "../styles/typography"
 import Layout from "../components/Layout"
 import { Characters } from "../components/Characters"
 
