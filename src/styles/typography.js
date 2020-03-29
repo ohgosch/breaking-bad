@@ -1,13 +1,13 @@
 import styled from "styled-components"
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 26px;
 `
 
-export const Subtitle = styled.h2`
+export const Subtitle = styled.h3`
   font-style: normal;
   font-weight: bold;
   font-size: 16px;

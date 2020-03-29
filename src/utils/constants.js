@@ -13,6 +13,7 @@ export const RESOLUTIONS = {
 
 export const COLORS = {
   greenDark: "#00473D",
+  greenDarkTransparent: "rgba(0, 71, 61, 0.8)",
   greenLight: "#00733E",
   white: "#F0F0F0",
   whiteGrey: "#E8E8E8",
