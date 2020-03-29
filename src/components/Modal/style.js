@@ -7,10 +7,12 @@ import closeImage from "../../images/close.svg"
 const fadeIn = keyframes`
   from {
     opacity: 0;
+    margin-top: -50px;
   }
 
   to {
     opacity: 1;
+    margin-top: 0;
   }
 `
 
@@ -31,7 +33,7 @@ export const Container = styled.div`
   ${p =>
     p.opened &&
     css`
-      animation: ${fadeIn} 0.2s linear;
+      animation: ${fadeIn} 0.2s ease-in;
       opacity: 1;
       pointer-events: auto;
     `}

@@ -5,7 +5,7 @@ import { Container, Content, Close, CloseOverlay } from "./style"
 import { modal } from "../../utils/texts"
 
 export const Modal = ({ children, close, opened }) => (
-  <Container opened={opened}>
+  <Container opened={opened} aria-hidden={!opened}>
     <CloseOverlay onClick={close}>{modal.close}</CloseOverlay>
     <Content>
       <Close title={modal.close} onClick={close} />
