@@ -1,7 +1,7 @@
 import styled, { css, keyframes } from "styled-components"
 
 import { COLORS } from "../../utils/constants"
-import { tabletDesktop } from "../../styles/medias"
+import { tabletDesktop, mobile } from "../../styles/medias"
 import closeImage from "../../images/close.svg"
 
 const fadeIn = keyframes`
@@ -62,6 +62,15 @@ export const Content = styled.section`
     border-radius: 8px;
     width: 560px;
     max-height: 400px;
+  `)}
+
+  ${mobile(css`
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   `)}
 `
 
