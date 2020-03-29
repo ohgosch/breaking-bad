@@ -6,3 +6,20 @@ export const characters = {
 export const modal = {
   close: "Close",
 }
+
+const andOrComma = values =>
+  values.reduce((acum, value, index) => {
+    if (index === 0) return value
+    if (index < values.length - 1) return `${acum}, ${value}`
+    return `${acum} and ${value}`
+  })
+
+export const modalCharacterDetail = {
+  age: "Age:",
+  ageText: age => `${age} years old`,
+  occupation: "Occupation:",
+  occupationText: andOrComma,
+  portrayed: "Portrayed by:",
+  seasonAppearance: "Season appearance:",
+  seasonAppearanceText: andOrComma,
+}

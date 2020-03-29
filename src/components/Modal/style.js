@@ -61,7 +61,7 @@ export const Content = styled.section`
   ${tabletDesktop(css`
     border-radius: 8px;
     width: 560px;
-    max-height: 400px;
+    max-height: 90vh;
   `)}
 
   ${mobile(css`
@@ -85,4 +85,7 @@ export const Close = styled.button`
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+  z-index: 10;
+  background-color: ${COLORS.white};
+  border-radius: 3px;
 `
