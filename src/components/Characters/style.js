@@ -15,6 +15,7 @@ export const CharactersList = styled.div`
   margin-top: 10px;
   justify-content: center;
   grid-row-gap: 20px;
+  padding-bottom: 50px;
   
   ${mobile(css`
     grid-column-gap: 6px;
@@ -36,10 +37,11 @@ export const Character = styled.article`
   position: relative;
   max-width: 180px;
   margin: 0 auto;
+  background-color: ${COLORS.greenDark};
 `
 
 export const CharacterImage = styled.img`
-  width: 100%;
+  width: auto;
   height: auto;
   display: block;
 `

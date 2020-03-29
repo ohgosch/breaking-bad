@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 
 import {
   Container,
@@ -8,59 +8,38 @@ import {
   CharacterImage,
   CharacterName,
 } from "./style"
-import { characters } from "../../utils/texts"
+import { characters as charactersTexts } from "../../utils/texts"
 import { Wrapper } from "../../styles/wrapper"
 import { Spinner } from "../Spinner"
+import { getCharacters } from "../../api/characters"
 
-export const Characters = () => (
-  <Container>
-    <Wrapper>
-      <SectionTitle>{characters.title}</SectionTitle>
-      <CharactersList>
-        <Character>
-          <CharacterImage
-            src="https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg"
-            alt="Walter White"
-          />
-          <CharacterName>Walter White</CharacterName>
-        </Character>
-        <Character>
-          <CharacterImage
-            src="https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg"
-            alt="Walter White"
-          />
-          <CharacterName>Walter White</CharacterName>
-        </Character>
-        <Character>
-          <CharacterImage
-            src="https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg"
-            alt="Walter White"
-          />
-          <CharacterName>Walter White</CharacterName>
-        </Character>
-        <Character>
-          <CharacterImage
-            src="https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg"
-            alt="Walter White"
-          />
-          <CharacterName>Walter White</CharacterName>
-        </Character>
-        <Character>
-          <CharacterImage
-            src="https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg"
-            alt="Walter White"
-          />
-          <CharacterName>Walter White</CharacterName>
-        </Character>
-        <Character>
-          <CharacterImage
-            src="https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg"
-            alt="Walter White"
-          />
-          <CharacterName>Walter White</CharacterName>
-        </Character>
-      </CharactersList>
-      <Spinner />
-    </Wrapper>
-  </Container>
-)
+export const Characters = () => {
+  const [characters, setCharacters] = useState([])
+  const [loading, setLoading] = useState(true)
+
+  const fetchCharacters = async () => {
+    const { data } = await getCharacters()
+    setCharacters(data)
+    setLoading(false)
+  }
+
+  useEffect(() => {
+    fetchCharacters()
+  }, [])
+  return (
+    <Container>
+      <Wrapper>
+        <SectionTitle>{charactersTexts.title}</SectionTitle>
+        <CharactersList>
+          {characters.map(({ name, img, char_id: id }) => (
+            <Character key={id}>
+              <CharacterImage src={img} alt={name} />
+              <CharacterName>{name}</CharacterName>
+            </Character>
+          ))}
+        </CharactersList>
+        {loading && <Spinner />}
+      </Wrapper>
+    </Container>
+  )
+}
