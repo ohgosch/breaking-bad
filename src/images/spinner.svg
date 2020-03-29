@@ -1,6 +1,7 @@
-<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="5" cy="15" r="5" fill="#F0F0F0"/>
-<circle cx="15" cy="5" r="5" fill="#F0F0F0"/>
-<path d="M30 15C30 17.7614 27.7614 20 25 20C22.2386 20 20 17.7614 20 15C20 12.2386 22.2386 10 25 10C27.7614 10 30 12.2386 30 15Z" fill="#F0F0F0"/>
-<circle cx="15" cy="25" r="5" fill="#F0F0F0"/>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30">
+  <defs/>
+  <circle cx="5" cy="15" r="5" fill="#F0F0F0"/>
+  <circle cx="15" cy="5" r="5" fill="#F0F0F0"/>
+  <path fill="#F0F0F0" d="M30 15c0 2.7614-2.2386 5-5 5s-5-2.2386-5-5 2.2386-5 5-5 5 2.2386 5 5z"/>
+  <circle cx="15" cy="25" r="5" fill="#F0F0F0"/>
 </svg>
