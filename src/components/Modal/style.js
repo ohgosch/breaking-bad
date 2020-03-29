@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from "styled-components"
+import styled, { css, keyframes, createGlobalStyle } from "styled-components"
 
 import { COLORS } from "../../utils/constants"
 import { tabletDesktop, mobile } from "../../styles/medias"
@@ -88,4 +88,9 @@ export const Close = styled.button`
   z-index: 10;
   background-color: ${COLORS.white};
   border-radius: 3px;
+`
+export const GlobalHidden = createGlobalStyle`
+  body, html {
+    overflow: hidden;
+  }
 `
