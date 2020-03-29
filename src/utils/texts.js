@@ -1,3 +1,8 @@
+export const header = {
+  title: "Breaking Bad",
+  logoAlt: "Logo of Breaking Bad",
+}
+
 export const characters = {
   title: "Characters",
   buttonDetail: name => `See details of ${name}`,
