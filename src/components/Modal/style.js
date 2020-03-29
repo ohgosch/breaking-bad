@@ -84,6 +84,7 @@ export const Close = styled.button`
   background-image: url(${closeImage});
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 12px;
   border: none;
   z-index: 10;
   background-color: ${COLORS.white};
