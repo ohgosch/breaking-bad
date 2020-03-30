@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Component] Modal Should renderer 1`] = `
+<div
+  aria-hidden={true}
+  className="sc-AxjAm lejmDe"
+>
+  <button
+    className="sc-AxirZ fGoBTZ"
+    onClick={[Function]}
+  >
+    Close
+  </button>
+  <section
+    className="sc-AxiKw iqcEQO"
+  >
+    <button
+      className="sc-AxhCb qOIsM"
+      onClick={[Function]}
+      title="Close"
+    />
+    Content
+  </section>
+</div>
+`;

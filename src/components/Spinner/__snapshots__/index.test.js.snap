@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Component] Spinner Should renderer 1`] = `
+<div
+  aria-hidden={true}
+  className="sc-AxjAm jkdfwr"
+>
+  <img
+    aria-hidden={true}
+    className="sc-AxirZ sxpLU"
+    src={Object {}}
+  />
+</div>
+`;
