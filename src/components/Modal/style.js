@@ -62,6 +62,7 @@ export const Content = styled.section`
     border-radius: 8px;
     width: 560px;
     max-height: 90vh;
+    box-shadow: 0px 0px 20px ${COLORS.blackTransparent};
   `)}
 
   ${mobile(css`
